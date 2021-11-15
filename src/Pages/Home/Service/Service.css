@@ -1,0 +1,65 @@
+.service img{
+    height: 180px;
+    width: 100%;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-bottom: 0;
+    border: 2px solid rgb(233, 84, 15);
+
+}
+
+.service{
+    /* border-radius: 10px; */
+    /* background-color: rgb(170, 169, 169); */
+    border: 2px solid rgb(233, 84, 15);
+    border-radius: 10px;
+    padding: 0;
+}
+.service:hover{
+    transform: scale(1.01);
+    background-color: rgba(170, 169, 169, 0.664);
+    border: 0;
+    box-shadow: 5px 5px 5px 5px rgba(192, 188, 188, 0.541);
+}
+
+.service h4{
+    color: white;
+    font-weight: 700;
+    background-color: rgb(233, 84, 15);
+    margin-top: 0;
+    padding: 5px 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.service p{
+/* padding: 5px; */
+font-size: 2rem;
+font-weight: 700;
+/* height: 60px; */
+}
+.service .btn{
+    background-color: orange;
+    color: white;
+    border: 0px;
+    margin: 5px 20%;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+.service:hover .btn:hover{
+    background-color: transparent;
+    color: rgb(233, 84, 15);
+    border: 2px solid rgb(233, 84, 15);
+}
+@media only screen and (max-width:688px) {
+    .service{
+width: 80%;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .service{
+     width: 40%;
+    }
+}

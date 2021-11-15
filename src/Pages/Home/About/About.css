@@ -1,0 +1,48 @@
+.teamCard{
+    width: 80%;
+    /* height: 150px; */
+    text-align: start;
+    background-color: rgba(187, 181, 201, 0.596);
+
+}
+.teamCard img{
+    height: 200px;
+    width: 100%;
+}
+.about{
+    margin-bottom: 100px;
+}
+.oneMember{
+    border: 2px solid gray;
+}
+.oneMember p{
+    color: transparent;
+    margin-top: -50px;
+}
+.about h1{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.about span{
+    color: rgb(233, 84, 15)
+    ;
+}
+.about .card-title{
+    font-weight: 700;
+}
+.oneMember:hover img{
+    opacity: 0.1;
+}
+.oneMember:hover h6{
+    margin-top: -130px;
+    font-size: 1.5rem;
+    color: chocolate;
+}
+.oneMember:hover p{
+    color: black;
+    margin-top: -10px;
+    text-align: justify;
+    font-weight: 600;
+    padding: 0px 20px;
+}

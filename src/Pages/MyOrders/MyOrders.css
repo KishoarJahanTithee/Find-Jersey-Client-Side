@@ -1,0 +1,40 @@
+.my-order-card{
+    border: 1px solid rgb(233, 84, 15)
+    ;
+    margin: 10px 0px;
+    background-image: linear-gradient(to right, rgba(233, 84, 15, 0.897)
+    , rgba(128, 128, 128, 0.178));
+}
+.my-bookings{
+    margin-top: 50px;
+    min-height: 60vh;
+}
+.my-bookings h3{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.buttons{
+    align-items: center;
+    justify-content: center;
+}
+.tick-btn{
+    color: rgb(50, 148, 50);
+}
+.cross-btn{
+    color: rgb(221, 34, 34);
+}
+.status-red {
+    background-color: rgb(219, 47, 47);
+    color: white;
+    border-radius: 20px;
+    padding: 2px 5px;
+    width: 40%;
+}
+.status-green {
+    background-color: rgb(56, 119, 41);
+    color: white;
+    border-radius: 20px;
+    padding: 2px 5px;
+    width: 40%;
+
+}

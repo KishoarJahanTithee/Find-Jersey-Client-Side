@@ -1,0 +1,7 @@
+.display-review{
+    border: 2px double orange;
+    margin: 10% 20%;
+}
+.display-review span{
+    color: rgb(233, 84, 15);
+}

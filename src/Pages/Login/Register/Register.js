@@ -2,6 +2,7 @@ import {Alert, Button, CircularProgress, Container, Grid, TextField, Typography}
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import './Register.css';
 
 
 const Register = () => {
@@ -29,8 +30,11 @@ const Register = () => {
   return (
     <Container>
       <Grid container spacing={2}>
+      <Grid item xs={12} md={6}>
+          <img style={{width: "100%", height: "80%"}} src="https://image.freepik.com/free-vector/secure-login-concept-illustration_114360-4685.jpg" alt="" />
+        </Grid>
         <Grid item sx={{mt: 8}} xs={12} md={6}>
-          <Typography variant="body1" gutterBottom>
+          <Typography className="reg-title" variant="" gutterBottom >
             Plaese Register
           </Typography>
 
@@ -63,7 +67,7 @@ const Register = () => {
               variant="standard"
             />
 
-            <Button sx={{width: "75%", m: 1}} variant="contained" type="submit">
+            <Button sx={{width: "75%", m: 1, backgroundColor: 'gray'}} variant="contained" type="submit">
               Register
             </Button>
 
@@ -77,9 +81,6 @@ const Register = () => {
           {user?.email && <Alert severity="success">Congratulations! User created successfully.</Alert>}
           {authError && <Alert severity="error">{authError}</Alert>
 }
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <img style={{width: "100%"}} rsc="" alt="" />
         </Grid>
       </Grid>
     </Container>

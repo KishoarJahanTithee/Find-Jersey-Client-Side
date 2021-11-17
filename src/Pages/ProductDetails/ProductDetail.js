@@ -11,7 +11,7 @@ const ProductDetail = () => {
 
     const [servicesDetails, setServicesDetails] = useState([])
         useEffect( () => {
-            fetch(`http://localhost:5000/service-details/${serviceId}`)
+            fetch(`https://floating-dusk-18796.herokuapp.com/service-details/${serviceId}`)
             // fetch(`https://afternoon-hamlet-58966.herokuapp.com/service-details/${serviceId}`)
             .then(res => res.json())
             .then(data => setServicesDetails(data));
@@ -26,7 +26,7 @@ const ProductDetail = () => {
             <div className="col-md-6 mt-5">            
             <h2>{servicesDetails.name}</h2>
             <p>{servicesDetails.description}</p>
-            <Nav.Link as={HashLink} className="book-btn btn mx-auto" to={`/service/${serviceId}#bookservice`}>BOOK SERVICE</Nav.Link>
+            <Nav.Link as={HashLink} className="book-btn btn mx-auto" to={`/service/${serviceId}#bookservice`}>ORDER NOW</Nav.Link>
             </div>
             </div>
         

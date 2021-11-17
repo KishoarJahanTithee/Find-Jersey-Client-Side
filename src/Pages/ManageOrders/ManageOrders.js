@@ -11,7 +11,7 @@ const ManageOrders = () => {
   
    useEffect(() => {
     //  fetch("https://afternoon-hamlet-58966.herokuapp.com/allorder")
-     fetch("http://localhost:5000/allorder")
+     fetch("https://floating-dusk-18796.herokuapp.com/allorder")
        .then((res) => res.json())
        .then((data) => setOrders(data));
    }, [updatef]);
@@ -19,7 +19,7 @@ const ManageOrders = () => {
   const DeleteService = (id) => {
     const permission = window.confirm("Are you sure ?");
     if (permission) {
-      fetch(`http://localhost:5000/delete-order/${id}`, {
+      fetch(`https://floating-dusk-18796.herokuapp.com/delete-order/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -30,7 +30,7 @@ const ManageOrders = () => {
   }
 
   const updateService = (id) => {
-    fetch(`https://afternoon-hamlet-58966.herokuapp.com/order-update/${id}`, {
+    fetch(`https://floating-dusk-18796.herokuapp.com/order-update/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -53,10 +53,10 @@ const ManageOrders = () => {
           <div className='card all-order-card mx-auto col-md-6 col-10'>
             <div className='card-body d-flex row'>
               <div className='col-9 text-start'>
-                <p className='card-text'>Service Id: {order.serviceId}</p>
-                <small className='text-muted pt-5 mt-5'>{order.email}</small>
-                <h6 className='card-title mt-2'>{order.serviceName}</h6>
                 <h6 className='card-title mt-2'>{order.userName}</h6>
+                <small className='text-muted pt-5 mt-5'>{order.email}</small><br />
+                <small className='text-muted card-text'>Service Id: {order.serviceId}</small>
+                <h6 className='card-title mt-2'>{order.serviceName}</h6>
                 {order.status === 'pending' ? (<p className="status-red text-center">{order?.status}</p>) : (<p className="status-green text-center">{order?.status}</p>)}
               </div>
               <div className='buttons col-3'>

@@ -15,7 +15,7 @@ import MyOrders from "./Pages/MyOrders/MyOrders";
 import ManageOrders from "./Pages/ManageOrders/ManageOrders";
 import AdminRoute from "./Pages/Login/AdminRoute/AdminRoute";
 import AllProducts from "./Pages/AllProducts/AllProducts";
-import Dashboard from "./Pages/Dashboard/Dashboard";
+import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import Payment from "./Pages/Payment/Payment";
 import ManageProducts from "./Pages/ManageProducts/ManageProducts";
 

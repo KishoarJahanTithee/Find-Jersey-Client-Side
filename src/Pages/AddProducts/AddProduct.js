@@ -9,7 +9,7 @@ const AddProduct = () => {
     const submitUserInfo = (e) => {
 
         e.preventDefault();
-        fetch("http://localhost:5000/add-service", {
+        fetch("https://floating-dusk-18796.herokuapp.com/add-service", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -28,7 +28,7 @@ const AddProduct = () => {
   return (
     <div className='container d-flex justify-content-center align-items-center'>
       <Form mt-5 onSubmit={(e)=>submitUserInfo(e)}>
-        <h2 className='mt-5'>Book This Services</h2>
+        <h2 className='mt-5'>ADD A NEW PRODUCT</h2>
         <hr />
         <Row className='mb-3'>
           <Form.Group as={Col} controlId='formGridName'>
@@ -62,8 +62,8 @@ const AddProduct = () => {
           </Form.Group>
         </Row>
 
-        <Button variant='dark' type='submit'>
-          Save
+        <Button variant='dark' type='submit' className="mb-5">
+          ADD
         </Button>
       </Form>
     </div>

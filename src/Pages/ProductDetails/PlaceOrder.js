@@ -18,7 +18,7 @@ const PlaceOrder = ({ serviceDetails }) => {
     data.status = 'pending';
 
 
-    fetch('http://localhost:5000/add-order', {
+    fetch('https://floating-dusk-18796.herokuapp.com/add-order', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -46,7 +46,7 @@ const PlaceOrder = ({ serviceDetails }) => {
   return (
     <div id="bookservice" className="bookService mt-5">
       <Form mt-5 onSubmit={handleSubmit(onSubmit)}>
-        <h2 className="mt-5">Book This Services</h2>
+        <h2 className="mt-5">Order Details</h2>
         <hr />
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridName">
@@ -82,7 +82,7 @@ const PlaceOrder = ({ serviceDetails }) => {
           {/* <Form.Control ref={statusRef} hidden value="pending" /> */}
         </Form.Group>
         <Button variant="dark" type="submit">
-          BOOK
+          Confirm Order
         </Button>
       </Form>
     </div>

@@ -28,6 +28,9 @@ const Login = () => {
     return (
             <Container>
       <Grid container spacing={2}>
+      <Grid item xs={12} md={6}>
+          <img style={{width: "100%"}} src="https://image.freepik.com/free-vector/access-control-system-illustration_335657-4640.jpg" alt="" />
+        </Grid>
         <Grid item sx={{mt: 8}} xs={12} md={6}>
           <Typography sx={{fontSize: '1.5rem', fontWeight: '600'}} variant="body1" gutterBottom>
             Plaese Login
@@ -72,9 +75,6 @@ const Login = () => {
           {user?.email && <Alert severity="success">User login successfull!</Alert>}
           {authError && <Alert severity="error">{authError}</Alert>
 }
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <img style={{width: "100%"}} src="https://image.freepik.com/free-vector/access-control-system-illustration_335657-4640.jpg" alt="" />
         </Grid>
       </Grid>
     </Container>

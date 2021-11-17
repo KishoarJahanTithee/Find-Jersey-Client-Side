@@ -8,7 +8,7 @@ const AllProducts = () => {
     const {admin} = useAuth();
     const [services, setServices] = useState([])
     useEffect( () => {
-        fetch('http://localhost:5000/all-services')
+        fetch('https://floating-dusk-18796.herokuapp.com/all-services')
         .then(res => res.json())
         .then(data => setServices(data));
     } ,[])
@@ -29,7 +29,7 @@ const AllProducts = () => {
             }
         </div>
         {
-        admin && <NavLink to="/add-service" className="btn btn-dark"><i className="fas fa-plus"></i> Add Product</NavLink>
+        admin && <NavLink to="/add-service" className="btn btn-dark mb-5"><i className="fas fa-plus"></i> Add Product</NavLink>
         }
         </div>
     );

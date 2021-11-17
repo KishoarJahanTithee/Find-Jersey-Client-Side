@@ -18,6 +18,7 @@ import AllProducts from "./Pages/AllProducts/AllProducts";
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import Payment from "./Pages/Payment/Payment";
 import ManageProducts from "./Pages/ManageProducts/ManageProducts";
+import GiveFeedback from "./Pages/Home/GiveFeedback/GiveFeedback";
 
 initializeAuthentication();
 
@@ -51,6 +52,9 @@ function App() {
             </AdminRoute>
             <PrivateRoute path="/add-service">
               <AddProduct></AddProduct>
+            </PrivateRoute>
+            <PrivateRoute path="add-review">
+               <GiveFeedback></GiveFeedback>
             </PrivateRoute>
             <PrivateRoute path="/manageProducts">
               <ManageProducts></ManageProducts>
